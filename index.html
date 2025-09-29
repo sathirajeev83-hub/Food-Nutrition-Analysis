@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home — Food Nutrition Analysis</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    a{
+      text-decoration: none;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Food Nutrition Analysis</h1>
+    <nav>
+      
+      <button><a href="index.html" aria-current="page">Home</a></button>
+      <button><a href="login.html">Login</a></button>
+      <button><a href="register.html">Register</a></button>
+      <button><a href="logout.html">Logout</a></button>
+    
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero card center">
+      <h2>Welcome to Food Nutrition Analysis</h2>
+      <p>
+        Upload food nutrition data, explore breakdowns of calories, macros, and micronutrients, 
+        and export reports for easy tracking.
+      </p>
+      <div class="actions">
+        <a href="login.html" class="btn">Login</a>
+        <a href="register.html" class="btn secondary">Register</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <h3>Upload Your Data</h3>
+        <p>Analyze food nutrition by uploading your own CSV files or use our sample dataset.</p>
+      </div>
+      <div class="card">
+        <h3>Interactive Dashboard</h3>
+        <p>Filter, search, and visualize food nutrient information in an intuitive dashboard.</p>
+      </div>
+      <div class="card">
+        <h3>Export Reports</h3>
+        <p>Export filtered results as CSV or JSON for your personal records or diet planning.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year-home"></span> Food Nutrition Analysis
+  </footer>
+
+  <script>
+    // Update year dynamically
+    document.getElementById("year-home").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

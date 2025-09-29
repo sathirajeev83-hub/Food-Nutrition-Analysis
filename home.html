@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Nutrition Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>🍏 Food Nutrition Analyzer</h1>
+    <p class="subtitle">Type any food and get its nutrition values instantly</p>
+
+    
+
+    <div class="search-box">
+      <input type="text" id="foodInput" placeholder="e.g. 2 eggs, 1 cup rice">
+      <button onclick="getNutrition()">Analyze</button>
+    </div>
+    <p class="logout">go to account? <a href="logout.html">logout</a></p>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

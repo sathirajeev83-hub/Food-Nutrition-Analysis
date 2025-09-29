@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Logout — Food Nutrition Analysis</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.css">
+  <style>
+    a{
+        text-decoration: none;
+       
+    }
+  </style>
+</head>
+<body class="bg-logout">
+  <header class="site-header">
+    <h1>Food Nutrition Analysis</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="logout.html" aria-current="page">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card center logout-card">
+      <h2>You've Logged Out</h2>
+      <p>
+        You have successfully logged out of <strong>Food Nutrition Analysis</strong>.  
+        We hope to see you back soon!
+      </p>
+      <div class="actions">
+        <a href="login.html" class="btn">Login again</a>
+        <a href="home.html" class="btn secondary"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year-logout"></span> Food Nutrition Analysis
+  </footer>
+   <p class="index">go to <a href="index.html">index</span></a></p>
+
+  <script>
+   
+    // Update footer year dynamically
+    document.getElementById("year-logout").textContent = new Date().getFullYear();
+
+    // Simulate clearing session/local storage for logout
+    localStorage.clear();
+    sessionStorage.clear();
+  </script>
+</body>
+</html>
